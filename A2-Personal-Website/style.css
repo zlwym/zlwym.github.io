@@ -1,0 +1,23 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+body{
+    font-family: Helvetica, sand-serif;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    padding: 20px;
+}
+
+p{
+    font-size: 16px
+}
+
+nav{
+    display: flex;
+    gap: 20px
+}
