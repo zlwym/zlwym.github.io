@@ -1,10 +1,61 @@
 console.log("vis.js is connected and running!")
 
-let circles = document.querySelectorAll("circle");
+// let circles = document.querySelectorAll("circle");
 
-circles.forEach((circle) => {
-    circle.addEventListener("click", () => {
-        let randColour = Math.floor(Math.random() * 676767);
-        circle.setAttribute("fill", `#${randColour}`);
+// circles.forEach((circle) => {
+//     circle.addEventListener("click", () => {
+//         let randColour = Math.floor(Math.random() * 676767);
+//         circle.setAttribute("fill", `#${randColour}`);
+//     });
+// });
+
+const secondVis = document.querySelectorAll("#visualization-container svg")[1];
+
+    const moon = secondVis.querySelector("circle");
+    const rects = secondVis.querySelectorAll("rect");
+
+    secondVis.addEventListener("click", () => {
+    
+        if (moon.getAttribute("fill") !== "yellow"){
+            moon.setAttribute("fill", "yellow");
+        }
+        else{
+            moon.setAttribute("fill", "LemonChiffon");
+        }
+        
+        if(rects[0].getAttribute("fill") !== "blue"){
+            rects[0].setAttribute("fill", "blue");
+        }
+        else{
+            rects[0].setAttribute("fill", "DarkBlue");
+        }
+
+        
+
+        rects.forEach((r, i) => {
+            if(i === 0) return;
+            if (r.getAttribute("fill") !== "orange"){
+                r.setAttribute("fill", "orange");
+            }
+            else{
+                r.setAttribute("fill", "DodgerBlue");
+            }
+        });
     });
-});
+
+// secondVis.addEventListener("click", () => {
+    
+    
+//     const moon = secondVis.querySelectorAll("circle");
+    
+//     moon.forEach(m => {
+//         if (m.getAttribute("fill") !== "orange"){
+//             m.setAttribute("fill", "orange");
+//         }
+//         else{
+//             m.setAttribute("fill", "LemonChiffon")
+//         }
+//     });
+
+// });
+
