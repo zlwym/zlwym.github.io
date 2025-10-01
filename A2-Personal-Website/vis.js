@@ -16,15 +16,15 @@ const secondVis = document.querySelectorAll("#visualization-container svg")[1];
 
     secondVis.addEventListener("click", () => {
     
-        if (moon.getAttribute("fill") !== "yellow"){
-            moon.setAttribute("fill", "yellow");
+        if (moon.getAttribute("fill") !== "Gold"){
+            moon.setAttribute("fill", "Gold");
         }
         else{
             moon.setAttribute("fill", "LemonChiffon");
         }
         
-        if(rects[0].getAttribute("fill") !== "blue"){
-            rects[0].setAttribute("fill", "blue");
+        if(rects[0].getAttribute("fill") !== "LightSkyBlue"){
+            rects[0].setAttribute("fill", "LightSkyBlue");
         }
         else{
             rects[0].setAttribute("fill", "DarkBlue");
@@ -34,8 +34,8 @@ const secondVis = document.querySelectorAll("#visualization-container svg")[1];
 
         rects.forEach((r, i) => {
             if(i === 0) return;
-            if (r.getAttribute("fill") !== "orange"){
-                r.setAttribute("fill", "orange");
+            if (r.getAttribute("fill") !== "white"){
+                r.setAttribute("fill", "white");
             }
             else{
                 r.setAttribute("fill", "DodgerBlue");
