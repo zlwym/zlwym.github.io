@@ -14,7 +14,7 @@ body{
 }
 
 p{
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5;
     margin-bottom: 32px;
 }
@@ -28,11 +28,30 @@ h2{
     font-size: 20px;
 }
 
+h3{
+    font-size: 16px;
+}
+
+h4{
+    font-size: 16;
+    font-weight: normal;
+    color: gray;
+}
+
 nav{
     display: flex;
     gap: 20px;
 }
 
+#vis2-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+#hover-text{
+    margin-left: 12px;
+}
 
 /* nav a.active {
   color: #0073e6;

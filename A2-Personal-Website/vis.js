@@ -1,27 +1,29 @@
 console.log("vis.js is connected and running!")
 
-// let circles = document.querySelectorAll("circle");
-
-// circles.forEach((circle) => {
-//     circle.addEventListener("click", () => {
-//         let randColour = Math.floor(Math.random() * 676767);
-//         circle.setAttribute("fill", `#${randColour}`);
-//     });
-// });
-
 const secondVis = document.querySelectorAll("#visualization-container svg")[1];
 
     const moon = secondVis.querySelector("circle");
     const rects = secondVis.querySelectorAll("rect");
+    const mountains = secondVis.querySelector("polyline");
+    const hoverText = document.getElementById("hover-text");
+
+    secondVis.addEventListener("mouseenter", () => {
+        hoverText.style.display = "block";
+    });
+    secondVis.addEventListener("mouseleave", () =>{
+        hoverText.style.display = "none";
+    });
 
     secondVis.addEventListener("click", () => {
     
         if (moon.getAttribute("fill") !== "Gold"){
             moon.setAttribute("fill", "Gold");
+            mountains.setAttribute("fill", "LightSlateGrey");
             alert("Good Morning!")
         }
         else{
             moon.setAttribute("fill", "LemonChiffon");
+            mountains.setAttribute("fill", "Black")
             alert("Good Night!")
         }
         
@@ -43,19 +45,5 @@ const secondVis = document.querySelectorAll("#visualization-container svg")[1];
         });
     });
 
-// secondVis.addEventListener("click", () => {
-    
-    
-//     const moon = secondVis.querySelectorAll("circle");
-    
-//     moon.forEach(m => {
-//         if (m.getAttribute("fill") !== "orange"){
-//             m.setAttribute("fill", "orange");
-//         }
-//         else{
-//             m.setAttribute("fill", "LemonChiffon")
-//         }
-//     });
 
-// });
 
