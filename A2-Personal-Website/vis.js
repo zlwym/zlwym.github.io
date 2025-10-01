@@ -18,9 +18,11 @@ const secondVis = document.querySelectorAll("#visualization-container svg")[1];
     
         if (moon.getAttribute("fill") !== "Gold"){
             moon.setAttribute("fill", "Gold");
+            alert("Good Morning!")
         }
         else{
             moon.setAttribute("fill", "LemonChiffon");
+            alert("Good Night!")
         }
         
         if(rects[0].getAttribute("fill") !== "LightSkyBlue"){
@@ -29,8 +31,6 @@ const secondVis = document.querySelectorAll("#visualization-container svg")[1];
         else{
             rects[0].setAttribute("fill", "DarkBlue");
         }
-
-        
 
         rects.forEach((r, i) => {
             if(i === 0) return;
