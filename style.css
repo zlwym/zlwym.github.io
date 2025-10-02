@@ -7,9 +7,9 @@ header{
 body{
     font-family: Helvetica, sand-serif;
     margin-top: 20px;
-    margin-right: 40px;
+    margin-right: 50px;
     margin-bottom: 20px;
-    margin-left: 40px;
+    margin-left: 50px;
     padding: 20px;
 }
 
@@ -25,7 +25,7 @@ h1{
 }
 
 h2{
-    font-size: 20px;
+    font-size: 24px;
 }
 
 h3{
@@ -43,6 +43,11 @@ nav{
     gap: 20px;
 }
 
+#links{
+    display: flex;
+    justify-content: space-between;
+}
+
 #vis2-header{
     display: flex;
     justify-content: flex-start;
@@ -53,9 +58,19 @@ nav{
     margin-left: 12px;
 }
 
-/* nav a.active {
-  color: #0073e6;
-  font-weight: bold;
-  text-decoration: underline;
-} */
+        img.one{
+            height: 100%;
+            width: 100%;
+        }
+
+        img.two{
+            height: 100%;
+            width: 100%;
+        }
+
+        img.three{
+            height: 100%;
+            width: 100%;
+        }
+
 
