@@ -4,16 +4,16 @@ This is a simple personal website including content similar to what would belong
 
 Includes a homepage with the following sections:
 
-Brief "About Me"
-Education
-Skills
-Experience
-Projects
+Brief "About Me",
+Education,
+Skills,
+Experience,
+Projects,
 Contact Information
 
 Includes a visualizations page with the following:
 
-Data Visualization
+Data Visualization,
 Interactive Visualization
 
 The site can be navigated from the top right corner. Return to the home page by clicking on my name. 
