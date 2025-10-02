@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width = device-width", initial-scale="1.0" >
+        <title>My Website</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class = "header-container">
+                <h1>Zoe Mann</h1>
+            </div>
+
+            <nav>
+            <a href = "visualizations.html"
+            class = "selected">Visualizations</a>
+            <a href = "#projects">Projects</a>
+            <a href = "#contact">Contact</a>
+             </nav>
+
+        </header>
+       
+        <div id = "visualization-container">
+            <h2>Number of Concerts I Attended Over the Last Five Years by Category</h2>
+            <svg width = "800" height = "500">
+
+                <line x1 = "100" y1 = "400" x2 = "780" y2 = "400" stroke = "black" stroke-width = "2" />
+                <line x1 = "100" y1 = "400" x2 = "100" y2 = "20" stroke = "black" stroke-width = "2" />
+
+                <circle cx = "168" cy = "352" r = "20" fill = "MediumSlateBlue"></circle>
+                <circle cx = "304" cy = "352" r = "30" fill = "MediumSlateBlue"></circle>
+                <circle cx = "440" cy = "352" r = "10" fill = "MediumSlateBlue"></circle>
+                <circle cx = "576" cy = "352" r = "10" fill = "MediumSlateBlue"></circle>
+                <circle cx = "712" cy = "352" r = "10" fill = "MediumSlateBlue"></circle>
+
+                <circle cx = "168" cy = "257" r = "10" fill = "MediumTurquoise"></circle>
+                <circle cx = "304" cy = "257" r = "10" fill = "MediumTurquoise"></circle>
+                <circle cx = "440" cy = "257" r = "20" fill = "MediumTurquoise"></circle>
+                <circle cx = "576" cy = "257" r = "30" fill = "MediumTurquoise"></circle>
+                <circle cx = "712" cy = "257" r = "20" fill = "MediumTurquoise"></circle>
+
+                <circle cx = "304" cy = "162" r = "20" fill = "MediumVioletRed"></circle>
+                <circle cx = "440" cy = "162" r = "40" fill = "MediumVioletRed"></circle>
+                <circle cx = "576" cy = "162" r = "20" fill = "MediumVioletRed"></circle>
+                <circle cx = "712" cy = "162" r = "10" fill = "MediumVioletRed"></circle>
+
+                <circle cx = "168" cy = "67" r = "20" fill = "Tomato"></circle>
+                <circle cx = "304" cy = "67" r = "10" fill = "Tomato"></circle>
+                <circle cx = "440" cy = "67" r = "30" fill = "Tomato"></circle>
+                <circle cx = "576" cy = "67" r = "30" fill = "Tomato"></circle>
+                <circle cx = "712" cy = "67" r = "10" fill = "Tomato"></circle>
+
+                <text x = "70" y = "357" fill = "black" font-size = "16" text-anchor = "end" >Hip Hop</text>
+                <text x = "70" y = "262" fill = "black" font-size = "16" text-anchor = "end" >EDM</text>
+                <text x = "70" y = "167" fill = "black" font-size = "16" text-anchor = "end" >Rock</text>
+                <text x = "70" y = "72" fill = "black" font-size = "16" text-anchor = "end" >Pop</text>
+
+                <text x = "168" y = "450" fill = "black" font-size = "16" text-anchor = "middle">2021</text>
+                <text x = "304" y = "450" fill = "black" font-size = "16" text-anchor = "middle">2022</text>
+                <text x = "440" y = "450" fill = "black" font-size = "16" text-anchor = "middle">2023</text>
+                <text x = "576" y = "450" fill = "black" font-size = "16" text-anchor = "middle">2024</text>
+                <text x = "712" y = "450" fill = "black" font-size = "16" text-anchor = "middle">2025</text>
+
+            </svg>
+
+            <div id = "vis2-header">
+                <h2>Morning person or night person? </h2>
+                <div id = "hover-text" style = "display: none;">click!</div>
+            </div>
+
+            <svg width = "800" height = "500">
+                <rect x = "0" y = "0" width = "800" height = "500" fill = "DarkBlue"/>      
+                <circle cx = "150" cy = "100" r = "50" fill = "LemonChiffon"></circle> 
+                
+                <rect x = "600" y = "40" rx = "20" ry = "20" width = "150" height = "40" fill ="DodgerBlue"/>
+                <rect x = "550" y = "65" rx = "20" ry = "20" width = "100" height = "40" fill = "DodgerBlue"/>
+                <rect x = "50" y = "70" rx = "20" ry = "20" width = "100" height = "40" fill = "DodgerBlue"/>
+                <rect x = "390" y = "130" rx = "20" ry = "20" width = "120" height = "40" fill = "DodgerBlue"/>
+                <rect x = "170" y = "100" rx = "20" ry = "20" width = "130" height = "40" fill = "DodgerBlue"/>
+
+                <polyline points = "-50,500 75,200 150,350 250,250 350,350 400,250 425,300 500,200 600,350 700,200 850,400 800, 500" fill = "Black"/>
+
+            </svg>
+
+        </div>
+
+    <script src = "vis.js"></script>
+
+</html>
