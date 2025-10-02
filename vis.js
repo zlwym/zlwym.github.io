@@ -1,5 +1,11 @@
 console.log("vis.js is connected and running!")
 
+const myName = document.getElementById("name");
+
+myName.addEventListener("click", function(){
+    window.location.href = "index.html";
+});
+
 const secondVis = document.querySelectorAll("#visualization-container svg")[1];
 
     const moon = secondVis.querySelector("circle");
